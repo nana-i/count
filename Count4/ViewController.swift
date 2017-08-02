@@ -27,6 +27,9 @@ class ViewController: UIViewController {
 
     @IBAction func plus() {
         number = number + 1
+        if number >= 10 {
+            label.textColor = UIColor.blue
+        }
         label.text = String(number)
     }
     
