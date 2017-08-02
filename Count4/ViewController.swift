@@ -35,6 +35,9 @@ class ViewController: UIViewController {
     
     @IBAction func minus() {
         number = number - 1
+        if number < 0 {
+            label.textColor = UIColor.red
+        }
         label.text = String(number)
     }
 
